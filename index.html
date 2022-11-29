@@ -3,21 +3,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width"/>
-    <link href="styles/index-style.css"/>
+    <link rel = "stylesheet" href="styles/index-style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+
     <title>Abe Moore Odell</title>
 </head>
 <body>
     <!-- landing page with social links, and links to resume and projects page -->
-    <h1>Abraham Moore Odell</h1>
-    <p>This is my landing page.</p>
-    <img src="images/kitty.jpg" alt="little kitty cat" id="cat-picture">
+    <div class="flex-container">
 
-    <p>Important Links: </p>
-    <ol>
-        <li><a href="https://github.com/abemo">github</a></li>
-        <li><a href="https://www.linkedin.com/in/abraham-moore-odell/">linkedin</a></li>
-    </ol>
+        <!--left-hand image-->
+        <div class="flex-child profile-image">
+            <img src="images/kitty.jpg" alt="little kitty cat" id="cat-picture">
+        </div>
 
-    <a href="html/resume.html">resume</a>
+        <!--text area-->
+        <div class="flex-child main-body">
+            <h1>Abraham Moore Odell</h1>
+            <p>This is my landing page.</p>
+        </div>
+
+        <!--right-hand sidebar-->
+        <div class="flex-child right-sidebar">
+            <p>Important Links: </p>
+            <a href="https://github.com/abemo" target="_blank" rel="noopener noreferrer">github</a>
+            <a href="https://www.linkedin.com/in/abraham-moore-odell/" target="_blank" rel="noopener noreferrer">linkedin</a>
+            <a href="html/resume.html" target="_blank" rel="noopener noreferrer">resume</a>
+            <a href="html/projects.html" target="_blank" rel="noopener noreferrer">projects</a>
+        </div>
+
+    </div>
+
 </body>
 </html>
